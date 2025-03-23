@@ -1,2 +1,2 @@
-# we-hack-back.github.io
-Static webpage for teh beginning of a long road ahead.
+#Our first step towards a safer tomorrow.
+Static webpage for the beginning of a long road ahead.
