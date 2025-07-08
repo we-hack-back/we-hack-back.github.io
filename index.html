@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>We Hack Back - Cybercrime Recovery Experts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
@@ -12,8 +11,9 @@
     }
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       color: #333;
+      line-height: 1.6;
     }
     .navbar {
       background: #111;
@@ -48,7 +48,11 @@
       background: url('https://source.unsplash.com/1600x900/?cybersecurity') center/cover no-repeat;
       color: #fff;
       text-align: center;
-      padding: 6em 1em;
+      padding: 8em 1em;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .hero h1 {
       font-size: 3em;
@@ -72,13 +76,30 @@
     .cta:hover {
       background: #ff7000;
     }
+    .info {
+      padding: 4em 1em;
+      display: flex;
+      justify-content: center;
+    }
+    .info-content {
+      max-width: 800px;
+      text-align: center;
+    }
+    .info-content h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    .info-content p {
+      font-size: 1.1em;
+      margin: 0.5em 0;
+    }
     .features {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2em;
       padding: 4em 1em;
-      background: #f6f6f6;
+      background: #fafafa;
     }
     .feature {
       flex: 1 1 250px;
@@ -109,12 +130,28 @@
   </nav>
 
   <section class="hero">
-    <h1>Recover From Cybercrime</h1>
-    <p>We provide expert guidance and support at no cost to help you reclaim your digital life.</p>
+    <h1>Take Back Control</h1>
+    <p>We provide free, expert guidance so you can recover from cybercrime and restore your digital life.</p>
     <a href="README.md" class="cta">Contact us on Signal</a>
   </section>
 
-  <section class="features" id="about">
+  <section class="info" id="about">
+    <div class="info-content">
+      <h2>Welcome! We're here to help.</h2>
+      <p>We are Hack Back, an organization dedicated to helping individuals respond to and overcome cybersecurity crime for the betterment of society.</p>
+      <p>If you are a victim of cybersecurity crime and need immediate assistance, reach out to us on Signal.</p>
+    </div>
+  </section>
+
+  <section class="info" id="how">
+    <div class="info-content">
+      <h2>How It Works</h2>
+      <p>Once we receive your message, our team of cybersecurity experts will reach out to you as soon as possible.</p>
+      <p>Our goal is to respond to every message within 24 hours. Please be patient—we also work full time jobs and can't check our phones around the clock.</p>
+    </div>
+  </section>
+
+  <section class="features">
     <div class="feature">
       <i class="fa-solid fa-bolt"></i>
       <h2>Fast Response</h2>
@@ -129,6 +166,13 @@
       <i class="fa-solid fa-hand-holding-heart"></i>
       <h2>No Hidden Costs</h2>
       <p>We offer our assistance free of charge to help you get back on your feet.</p>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="info-content">
+      <h2>No Costs Involved</h2>
+      <p>We will never charge you a fee or expect any form of payment for the support we provide. We simply want to help you out of an unfortunate situation and get you back on your feet.</p>
     </div>
   </section>
 
