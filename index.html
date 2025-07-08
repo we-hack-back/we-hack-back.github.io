@@ -3,52 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We Hack Back</title>
+  <title>We Hack Back - Cybercrime Recovery Experts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+    }
+    .navbar {
+      background: #111;
+      color: #fff;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+    .nav-links {
+      list-style: none;
+      margin: 0;
       padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #2a2a72, #009ffd);
+      display: flex;
+      gap: 1em;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?cybersecurity') center/cover no-repeat;
       color: #fff;
       text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 6em 1em;
     }
-    h1 {
-      font-size: 2.5em;
+    .hero h1 {
+      font-size: 3em;
       margin-bottom: 0.5em;
     }
-    p {
-      max-width: 600px;
-      line-height: 1.6;
+    .hero p {
+      font-size: 1.25em;
+      margin-bottom: 1.5em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .cta {
-      margin-top: 2em;
-      padding: 0.75em 1.5em;
-      border: none;
       background: #ff8c42;
       color: #fff;
-      font-size: 1em;
+      padding: 0.75em 1.5em;
       border-radius: 4px;
-      cursor: pointer;
       text-decoration: none;
+      font-weight: 700;
     }
     .cta:hover {
       background: #ff7000;
     }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      padding: 4em 1em;
+      background: #f6f6f6;
+    }
+    .feature {
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .feature i {
+      font-size: 2.5em;
+      color: #009ffd;
+      margin-bottom: 0.5em;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      background: #111;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-  <h1>Our first step towards a safer tomorrow</h1>
-  <p>
-    Welcome to Hack Back. We're dedicated to helping victims of cybercrime reclaim
-    their digital lives. If you need assistance, reach out and we'll do our best
-    to respond within 24 hours.
-  </p>
-  <a href="README.md" class="cta">Contact us on Signal</a>
+  <nav class="navbar">
+    <div class="logo">We Hack Back</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Recover From Cybercrime</h1>
+    <p>We provide expert guidance and support at no cost to help you reclaim your digital life.</p>
+    <a href="README.md" class="cta">Contact us on Signal</a>
+  </section>
+
+  <section class="features" id="about">
+    <div class="feature">
+      <i class="fa-solid fa-bolt"></i>
+      <h2>Fast Response</h2>
+      <p>Our team aims to respond to every request within 24 hours.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h2>Expert Guidance</h2>
+      <p>Seasoned security professionals help you navigate your situation safely.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      <h2>No Hidden Costs</h2>
+      <p>We offer our assistance free of charge to help you get back on your feet.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 We Hack Back</p>
+  </footer>
 </body>
 </html>
