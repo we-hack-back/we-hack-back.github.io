@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We Hack Back - Cybercrime Recovery Experts</title>
+  <title>Cyber Help Services</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
@@ -94,16 +94,76 @@
     .info {
       padding: 4em 1em;
       display: flex;
-      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
       background: #fff;
     }
 
     .info:nth-of-type(even) {
       background: #f4f4f4;
     }
+
+    .card {
+      flex: 0 0 300px;
+      margin: 1em;
+      padding: 2em;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1.5em;
+    }
   </style>
 </head>
 <body>
-<!-- body content here -->
+  <nav class="navbar">
+    <div class="logo">Cyber Help Services</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Recover and Protect with Confidence</h1>
+    <p>Our experts are ready to help you bounce back from cyber incidents and safeguard your future.</p>
+    <a href="#contact" class="cta">Get Help Now</a>
+  </header>
+
+  <section id="services" class="info">
+    <div class="card">
+      <i class="fas fa-shield-alt fa-2x"></i>
+      <h3>Incident Response</h3>
+      <p>Immediate assistance to contain breaches and guide you through recovery.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-user-secret fa-2x"></i>
+      <h3>Forensics</h3>
+      <p>In-depth investigation and analysis to uncover what happened.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-lock fa-2x"></i>
+      <h3>Prevention Planning</h3>
+      <p>Strategies and training to help prevent future incidents.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="info">
+    <div style="max-width: 700px; text-align: center;">
+      <h2>Ready to Get Started?</h2>
+      <p>Reach out and our team will respond within 24 hours.</p>
+      <a href="mailto:help@example.com" class="cta">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2024 Cyber Help Services. All rights reserved.
+  </footer>
 </body>
 </html>
