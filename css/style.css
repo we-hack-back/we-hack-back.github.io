@@ -41,6 +41,38 @@ body {
       gap: 1em;
     }
 
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    background: var(--blue);
+    padding: 1em 0;
+    gap: 1em;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+}
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
