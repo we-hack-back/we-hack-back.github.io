@@ -145,3 +145,8 @@ footer {
   font-weight: 700;
   text-align: right;
 }
+
+.contact-wrapper {
+  max-width: 700px;
+  text-align: center;
+}
