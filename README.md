@@ -1,5 +1,5 @@
 # Welcome! We're here to help.
-We are Hack Back, an organization dedicated to helping individuals respond to and overcome cybersecurity crime for the betterment of society.
+We Hack Back, an organization dedicated to helping individuals respond to and overcome cybersecurity crime for the betterment of society.
 If you are a victim of cybersecurity crime and need immediate assistance, please reach out to us on Signal here:
 
 # How does it work?
