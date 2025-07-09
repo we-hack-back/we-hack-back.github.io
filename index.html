@@ -67,7 +67,13 @@
     <div class="contact-wrapper">
       <h2>Ready to Get Started?</h2>
       <p>Reach out and our team will respond within 24 hours.</p>
-      <a href="mailto:help@example.com" class="cta">Contact Us</a>
+      <!-- The form uses a mailto action. Consider server-side processing for reliable handling. -->
+      <form class="contact-form" action="mailto:help@example.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
+        <button type="submit" class="cta">Send Message</button>
+      </form>
     </div>
   </section>
 
