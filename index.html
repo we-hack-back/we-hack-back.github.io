@@ -10,6 +10,9 @@
 <body>
   <nav class="navbar">
     <div class="logo">We Hack Back</div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -68,5 +71,12 @@
   <footer>
     &copy; 2024 We Hack Back. All rights reserved.
   </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
