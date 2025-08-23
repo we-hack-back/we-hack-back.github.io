@@ -169,11 +169,22 @@ footer {
   margin: 0 auto;
 }
 
-.testimonial-grid blockquote {
-  background: #fff;
+/* Testimonial cards */
+.testimonial-card {
+  margin: 0;
   padding: 1.5em;
   border-radius: 12px;
+  background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial-card .stars {
+  color: var(--orange);
+  margin-bottom: 0.5em;
+}
+
+.testimonial-grid blockquote {
+  margin: 0;
   font-style: italic;
 }
 
