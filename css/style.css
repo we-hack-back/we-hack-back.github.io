@@ -185,5 +185,23 @@ footer {
 
 .contact-wrapper {
   max-width: 700px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  align-self: flex-end;
 }
