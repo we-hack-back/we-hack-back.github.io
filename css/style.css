@@ -258,17 +258,6 @@ body {
   background: #eef3fb;
 }
 
-.card {
-  flex: 1 1 250px;
-  max-width: 300px;
-  margin: 1em;
-  padding: 2em;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
 footer {
   background: var(--blue);
   color: #fff;
@@ -298,6 +287,10 @@ footer {
   padding: 1.5em;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.trust-card i {
+  color: var(--blue);
 }
 
 .trust-card h3 {
