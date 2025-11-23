@@ -362,6 +362,10 @@ footer {
   margin-top: 1em;
 }
 
+#services {
+  background: #f2f2f7;
+}
+
 #about {
   display: block;
 }
