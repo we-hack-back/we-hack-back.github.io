@@ -302,6 +302,11 @@ footer {
   margin: 0;
 }
 
+.trust-card .role {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
 .trust-points {
   list-style: none;
   padding: 0;
