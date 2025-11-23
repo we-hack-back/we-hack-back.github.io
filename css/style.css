@@ -244,6 +244,12 @@ body {
   background: #fff;
 }
 
+.section-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 .info:nth-of-type(even) {
   background: #f2f2f7;
 }
