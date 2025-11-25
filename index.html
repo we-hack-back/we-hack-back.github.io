@@ -13,61 +13,96 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <nav class="navbar">
-    <div class="logo">We Hack Back</div>
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#trust">Trust</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="section-inner nav-inner">
+      <div class="logo">We Hack Back</div>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#trust">Trust</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-content">
-      <div>
-        <p class="eyebrow">Free help for people harmed by cybercrime</p>
-        <h1>Recover, rebuild, and feel safe online again</h1>
-        <p class="lede">Security responders, investigators, and advocates who guide victims through containment, evidence collection, and next-step planning with empathy.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="cta">Request support</a>
-          <a href="#emergency" class="secondary-cta">See urgent steps</a>
-        </div>
-        <p class="availability">4-hour response goal · Confidential & trauma-informed</p>
+  <main id="main-content">
+    <div class="safety-banner" role="note">
+      <div class="section-inner">
+        <p>If you're in immediate physical danger, contact local emergency services first. We'll help with digital safety and evidence.</p>
       </div>
     </div>
-  </header>
+    <header class="hero">
+      <div class="section-inner">
+        <div class="hero-inner">
+          <div class="hero-main">
+            <p class="eyebrow">Trauma-informed responders</p>
+            <h1>Free, confidential help after cybercrime.</h1>
+            <p class="lede">Calm, plain-language guidance to stop harm, collect evidence safely, and regain control without blame.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="cta">Request support</a>
+              <a href="#emergency" class="secondary-cta">See urgent steps</a>
+            </div>
+            <ul class="hero-promises">
+              <li><i class="fas fa-shield-heart" aria-hidden="true"></i><span>Always free; we never ask for payment or passwords.</span></li>
+              <li><i class="fas fa-stopwatch" aria-hidden="true"></i><span>4-hour response goal from a human responder.</span></li>
+              <li><i class="fas fa-hands-holding" aria-hidden="true"></i><span>Trauma-informed communication that keeps you in control.</span></li>
+            </ul>
+            <ul class="hero-bullets">
+              <li>Trauma-informed and confidential. We move at your pace.</li>
+              <li>No payment, no remote control requests. You stay in control.</li>
+              <li>Plain-language updates so you always know what’s happening.</li>
+            </ul>
+          </div>
+          <aside class="hero-support" aria-label="Response expectations">
+            <div class="support-card">
+              <p class="card-eyebrow">If you feel unsafe or overwhelmed</p>
+              <p class="card-copy">Pause, close suspicious tabs, and take screenshots. We’ll help you decide the safest next step.</p>
+              <div class="response-metric" role="presentation">
+                <p class="metric-label">Response goal</p>
+                <p class="metric-value">Within 4 hours</p>
+              </div>
+              <a class="cta ghost" href="mailto:help@wehackback.org">Email a responder</a>
+              <p class="card-note">You can share only what you’re comfortable sharing—we never blame victims.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
 
   <section id="emergency" class="banner">
-    <div class="banner-content">
-      <div>
-        <p class="eyebrow">If something is happening right now</p>
-        <h2>Pause, capture evidence, and get a responder involved</h2>
-        <p>We guide you through containment and safe data collection so you can share what happened without risking further harm.</p>
-        <ul class="steps">
-          <li><i class="fas fa-stopwatch" aria-hidden="true"></i><span>Disconnect compromised devices from the internet if safe to do so.</span></li>
-          <li><i class="fas fa-camera" aria-hidden="true"></i><span>Screenshot suspicious messages, pop-ups, or transactions before closing them.</span></li>
-          <li><i class="fas fa-envelope-open-text" aria-hidden="true"></i><span>Forward phishing emails with full headers when possible.</span></li>
-        </ul>
-      </div>
-      <div class="banner-cta">
-        <p class="hotline-label">Prefer to talk?</p>
-        <a class="cta full-width" href="mailto:help@wehackback.org">Email a responder</a>
-        <p class="hotline-note">We never ask for payment or remote control of your device.</p>
+    <div class="section-inner">
+      <div class="banner-content">
+        <div>
+          <p class="eyebrow">If something is happening right now</p>
+          <h2>Pause, capture evidence, and get a responder involved</h2>
+          <p>We guide you through containment and safe data collection so you can share what happened without risking further harm.</p>
+          <ol class="steps ordered">
+            <li><span class="step-number" aria-hidden="true">1</span><span>Disconnect compromised devices from the internet if it is safe. Your safety comes first.</span></li>
+            <li><span class="step-number" aria-hidden="true">2</span><span>Take screenshots or photos of messages, pop-ups, or transactions before closing them.</span></li>
+            <li><span class="step-number" aria-hidden="true">3</span><span>Contact us with what you saw; include links or phone numbers if available.</span></li>
+          </ol>
+          <a class="cta" href="#contact">Tell us what happened</a>
+        </div>
+        <div class="banner-cta">
+          <p class="hotline-label">Prefer to talk?</p>
+          <a class="cta full-width" href="mailto:help@wehackback.org">Email a responder</a>
+          <p class="hotline-note">We never ask for payment or remote control of your device.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="services" class="info">
-    <div class="trust-wrapper services-wrapper">
+    <div class="section-inner">
       <div class="trust-header">
         <p class="eyebrow">WHAT WE DO</p>
         <h2>Hands-on help from first alert to recovery</h2>
         <p>Responders, investigators, and advocates work together to contain the incident, preserve evidence, and guide you to safer ground.</p>
       </div>
-      <div class="trust-grid services-grid">
+      <div class="card-grid">
         <div class="trust-card">
           <i class="fas fa-shield-alt fa-2x" aria-hidden="true"></i>
           <span class="sr-only">Incident Response</span>
@@ -97,13 +132,13 @@
   </section>
 
   <section id="trust" class="info">
-    <div class="trust-wrapper">
+    <div class="section-inner">
       <div class="trust-header">
         <p class="eyebrow">How we work</p>
         <h2>Built on security principles you can verify</h2>
         <p>Every case follows documented playbooks, transparent communication, and industry standards designed to keep your data safe.</p>
       </div>
-      <div class="trust-grid">
+      <div class="card-grid">
         <div class="trust-card">
           <i class="fas fa-user-check fa-2x" aria-hidden="true"></i>
           <h3>Vetted responders</h3>
@@ -125,7 +160,7 @@
           <p>Communication that avoids blame, prioritizes your consent, and keeps you in control of decisions.</p>
         </div>
       </div>
-      <ul class="trust-points">
+      <ul class="checklist">
         <li><i class="fas fa-check" aria-hidden="true"></i><span>4-hour response goal for new cases and a dedicated point of contact throughout the incident.</span></li>
         <li><i class="fas fa-check" aria-hidden="true"></i><span>Post-incident hardening plan with prioritized fixes and training materials tailored to your risk.</span></li>
         <li><i class="fas fa-check" aria-hidden="true"></i><span>Partnership-friendly: ready to collaborate with your legal counsel, insurer, or MSP.</span></li>
@@ -134,14 +169,42 @@
     </div>
   </section>
 
+  <section id="expect" class="info muted">
+    <div class="section-inner">
+      <div class="trust-header">
+        <p class="eyebrow">What to expect</p>
+        <h2>What happens after you reach out</h2>
+        <p>We stay transparent about timelines and actions so you know what is happening and why.</p>
+      </div>
+      <div class="card-grid">
+        <div class="trust-card">
+          <h3>You contact us</h3>
+          <p>Share the safest way to reach you and whatever details you have — pseudonyms are welcome.</p>
+        </div>
+        <div class="trust-card">
+          <h3>We respond in about 4 hours</h3>
+          <p>A responder confirms receipt, shares initial containment steps, and sets expectations.</p>
+        </div>
+        <div class="trust-card">
+          <h3>Contain &amp; collect evidence</h3>
+          <p>We help you reduce exposure and capture proof the right way for platforms or authorities.</p>
+        </div>
+        <div class="trust-card">
+          <h3>Support reporting &amp; recovery</h3>
+          <p>Guidance to notify banks, platforms, or law enforcement, plus follow-up to harden accounts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="victims" class="info">
-    <div class="trust-wrapper">
+    <div class="section-inner">
       <div class="trust-header">
         <p class="eyebrow">Who we help</p>
         <h2>You deserve real support, not judgment</h2>
         <p>Different victims, same promise: calm guidance, clear steps, and evidence handled with care.</p>
       </div>
-      <div class="trust-grid">
+      <div class="card-grid">
         <div class="trust-card">
           <i class="fas fa-store fa-2x" aria-hidden="true"></i>
           <span class="sr-only">Small businesses</span>
@@ -168,93 +231,175 @@
   </section>
 
   <section id="about" class="info">
-    <div class="trust-wrapper">
+    <div class="section-inner narrow">
       <div class="trust-header">
         <p class="eyebrow">Our Team</p>
-        <h2>The responders behind your recovery</h2>
-        <p>Investigators, analysts, and advocates collaborate so you have one coordinated team guiding every step.</p>
+        <h2>Who works on your case</h2>
+        <p>Responders share updates so you never have to repeat yourself. Names are representative; your team may use pseudonyms for safety.</p>
       </div>
-      <div class="trust-grid team-grid">
+      <div class="card-grid team-grid">
         <div class="trust-card team-card">
-          <img src="https://via.placeholder.com/100" alt="Alice Smith">
-          <h3>Alice Smith</h3>
+          <img src="https://via.placeholder.com/100" alt="Alice M., Lead Investigator">
+          <h3>Alice M.</h3>
           <p class="role">Lead Investigator</p>
-          <p>Specializes in forensic analysis and incident response.</p>
+          <p>10+ years in digital forensics and law-enforcement liaison work.</p>
         </div>
         <div class="trust-card team-card">
-          <img src="https://via.placeholder.com/100" alt="Bob Johnson">
-          <h3>Bob Johnson</h3>
+          <img src="https://via.placeholder.com/100" alt="Jay R., Security Analyst">
+          <h3>Jay R.</h3>
           <p class="role">Security Analyst</p>
-          <p>Focuses on threat assessment and prevention planning.</p>
+          <p>Cloud security specialist focused on rapid containment and hardening.</p>
         </div>
         <div class="trust-card team-card">
-          <img src="https://via.placeholder.com/100" alt="Carol Lee">
-          <h3>Carol Lee</h3>
-          <p class="role">Support Coordinator</p>
-          <p>Ensures clients receive timely and effective assistance.</p>
+          <img src="https://via.placeholder.com/100" alt="Sam L., Survivor Advocate">
+          <h3>Sam L.</h3>
+          <p class="role">Survivor Advocate</p>
+          <p>Trauma-informed advocate who keeps communication clear and respectful.</p>
         </div>
       </div>
-      <ul class="trust-points">
-        <li><i class="fas fa-check" aria-hidden="true"></i><span>Every case lead pairs investigative rigor with trauma-aware communication.</span></li>
-        <li><i class="fas fa-check" aria-hidden="true"></i><span>Cross-functional responders share updates so you never have to repeat yourself.</span></li>
-        <li><i class="fas fa-check" aria-hidden="true"></i><span>Specialists stay engaged after containment to harden systems and restore confidence.</span></li>
+      <ul class="simple-list team-list">
+        <li>Every case lead pairs investigative rigor with trauma-aware communication.</li>
+        <li>Cross-functional responders share updates so you never have to repeat yourself.</li>
+        <li>Specialists stay engaged after containment to harden systems and restore confidence.</li>
       </ul>
     </div>
   </section>
 
   <section id="contact" class="info muted">
-    <div class="contact-wrapper">
-      <p class="eyebrow">Reach our responders</p>
-      <h2>Ready to get started?</h2>
-      <p>Share what happened and how to contact you. We aim to respond within 4 hours.</p>
-      <form class="contact-form" action="mailto:help@wehackback.org" method="POST" enctype="text/plain">
-        <label class="sr-only" for="name">Your name</label>
-        <input id="name" type="text" name="name" placeholder="Your Name" required>
-
-        <label class="sr-only" for="email">Your email</label>
-        <input id="email" type="email" name="email" placeholder="Your Email" required>
-
-        <label class="sr-only" for="phone">Phone (optional)</label>
-        <input id="phone" type="tel" name="phone" placeholder="Phone (optional)">
-
-        <label class="sr-only" for="incident">Incident type</label>
-        <input id="incident" type="text" name="incident" placeholder="Incident type (e.g., ransomware, account takeover)" required>
-
-        <label class="sr-only" for="message">How can we help?</label>
-        <textarea id="message" name="message" placeholder="What happened? Include when it started and affected accounts or devices." rows="5" required></textarea>
-
-        <label class="sr-only" for="consent">Data handling</label>
-        <div class="consent">
-          <input id="consent" type="checkbox" name="consent" required>
-          <label for="consent">I understand We Hack Back will use this information only to respond to my request.</label>
+    <div class="section-inner narrow">
+      <div class="contact-wrapper">
+        <p class="eyebrow">Reach our responders</p>
+        <h2>Ready to get started?</h2>
+        <p>Share what happened and how to contact you. We aim to respond within 4 hours.</p>
+        <div class="contact-assurances">
+          <p><i class="fas fa-ban" aria-hidden="true"></i>No payment, no passwords, no remote-control requests.</p>
+          <p><i class="fas fa-lock" aria-hidden="true"></i>Your info is used only to respond, unless law requires otherwise.</p>
         </div>
+        <p class="reassurance">You are not to blame for what happened, and it’s okay if you don’t remember every detail.</p>
+        <form class="contact-form" action="mailto:help@wehackback.org" method="POST" enctype="text/plain">
+          <fieldset class="form-step" data-step="1">
+            <legend class="sr-only">How can we reach you</legend>
+            <label for="name">Name (you can use a pseudonym)</label>
+            <input id="name" type="text" name="name" placeholder="Name or pseudonym" required>
 
-        <button type="submit" class="cta">Send message</button>
-      </form>
-      <p class="contact-note">Prefer to use your own email? Send details to <a href="mailto:help@wehackback.org">help@wehackback.org</a>.</p>
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" type="tel" name="phone" placeholder="Include country code if outside US/Canada">
+          </fieldset>
+
+          <fieldset class="form-step" data-step="2">
+            <legend class="sr-only">What happened</legend>
+            <label for="incident">Incident type</label>
+            <select id="incident" name="incident" required>
+              <option value="" disabled selected>Select an option</option>
+              <option>Sextortion / blackmail</option>
+              <option>Account takeover</option>
+              <option>Harassment / doxing</option>
+              <option>Fraud or scam</option>
+              <option>Malware / ransomware</option>
+              <option>Data breach</option>
+              <option>I’m not sure</option>
+              <option>Other</option>
+            </select>
+
+            <label for="message">What happened?</label>
+            <textarea id="message" name="message" placeholder="Example: Received threats demanding money after sending photos; Instagram account locked; got links from +44 number." rows="5" required></textarea>
+            <p class="helper-text">Share what you remember. Plain language is enough—you don’t need perfect technical terms.</p>
+          </fieldset>
+
+          <label class="sr-only" for="consent">Data handling</label>
+          <div class="consent">
+            <input id="consent" type="checkbox" name="consent" required>
+            <label for="consent">I understand We Hack Back will use this information only to respond to my request.</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="secondary-cta form-back" aria-hidden="true">Back</button>
+            <button type="button" class="cta form-next">Next</button>
+            <button type="submit" class="cta form-submit">Send message</button>
+          </div>
+        </form>
+        <p class="contact-note">Prefer to use your own email? Send details to <a href="mailto:help@wehackback.org">help@wehackback.org</a>.</p>
+      </div>
     </div>
   </section>
 
+  </main>
+
   <footer>
-    <div class="footer-content">
-      <div>
-        <p class="logo">We Hack Back</p>
-        <p>Free incident response and security help for victims of cybercrime.</p>
+    <div class="section-inner">
+      <div class="footer-content">
+        <div>
+          <p class="logo">We Hack Back</p>
+          <p class="tagline">We Hack Back — we don’t break the law; we help you take your power back online.</p>
+          <p>Free incident response and security help for victims of cybercrime.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Need help?</p>
+          <p>Email <a href="mailto:help@wehackback.org">help@wehackback.org</a></p>
+          <p class="footer-note">We will never pressure you to pay or share passwords.</p>
+        </div>
       </div>
-      <div>
-        <p class="footer-heading">Need help?</p>
-        <p>Email <a href="mailto:help@wehackback.org">help@wehackback.org</a></p>
-        <p class="footer-note">We will never pressure you to pay or share passwords.</p>
-      </div>
+      <p class="copyright">&copy; 2024 We Hack Back. All rights reserved.</p>
     </div>
-    <p class="copyright">&copy; 2024 We Hack Back. All rights reserved.</p>
   </footer>
   <script>
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
       nav.classList.toggle('active');
     });
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Progressive enhancement: two-step form
+    const contactForm = document.querySelector('.contact-form');
+    const steps = contactForm ? Array.from(contactForm.querySelectorAll('.form-step')) : [];
+    const nextBtn = contactForm?.querySelector('.form-next');
+    const backBtn = contactForm?.querySelector('.form-back');
+    const submitBtn = contactForm?.querySelector('.form-submit');
+    let currentStep = 0;
+
+    function updateSteps() {
+      steps.forEach((step, index) => {
+        const isActive = index === currentStep;
+        step.hidden = !isActive;
+        step.setAttribute('aria-hidden', String(!isActive));
+      });
+      if (backBtn) {
+        backBtn.style.display = currentStep === 0 ? 'none' : 'inline-flex';
+        backBtn.setAttribute('aria-hidden', currentStep === 0 ? 'true' : 'false');
+      }
+      if (nextBtn) {
+        nextBtn.style.display = currentStep === steps.length - 1 ? 'none' : 'inline-flex';
+        nextBtn.setAttribute('aria-hidden', currentStep === steps.length - 1 ? 'true' : 'false');
+      }
+      if (submitBtn) {
+        submitBtn.style.display = currentStep === steps.length - 1 ? 'inline-flex' : 'none';
+        submitBtn.setAttribute('aria-hidden', currentStep === steps.length - 1 ? 'false' : 'true');
+      }
+    }
+
+    if (contactForm && steps.length > 0) {
+      contactForm.classList.add('is-enhanced');
+      updateSteps();
+      nextBtn?.addEventListener('click', () => {
+        currentStep = Math.min(currentStep + 1, steps.length - 1);
+        updateSteps();
+      });
+      backBtn?.addEventListener('click', () => {
+        currentStep = Math.max(currentStep - 1, 0);
+        updateSteps();
+      });
+    }
   </script>
 </body>
 </html>
