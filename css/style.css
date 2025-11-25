@@ -431,6 +431,10 @@ img {
   font-weight: 700;
 }
 
+.steps + .cta {
+  margin-top: 0.8em;
+}
+
 .banner-cta {
   background: rgba(255, 255, 255, 0.08);
   padding: 1.5em;
