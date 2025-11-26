@@ -469,6 +469,12 @@ img {
   background: #eef3fb;
 }
 
+#trust,
+#victims,
+#contact {
+  background: #fff;
+}
+
 .trust-header {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -668,7 +674,6 @@ img {
 }
 
 #services,
-#victims,
 #about {
   background: #f2f2f7;
 }
