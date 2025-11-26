@@ -265,58 +265,72 @@
       <div class="contact-wrapper">
         <p class="eyebrow">Reach our responders</p>
         <h2>Ready to get started?</h2>
-        <p>Share what happened and how to contact you. We aim to respond within 4 hours.</p>
-        <div class="contact-assurances">
-          <p><i class="fas fa-ban" aria-hidden="true"></i>No payment, no passwords, no remote-control requests.</p>
-          <p><i class="fas fa-lock" aria-hidden="true"></i>Your info is used only to respond, unless law requires otherwise.</p>
+        <div class="contact-card">
+          <p class="contact-intro">Share what happened and how to contact you. We aim to respond within 4 hours.</p>
+          <p class="contact-alt">Prefer to use your own email? Send details to <a href="mailto:help@wehackback.org">help@wehackback.org</a>.</p>
+          <div class="contact-trust" role="note" aria-label="Trust information">
+            <p><i class="fas fa-ban" aria-hidden="true"></i>No payment, passwords, or remote-control requests.</p>
+            <p><i class="fas fa-lock" aria-hidden="true"></i>Your info is used only to respond, unless law requires otherwise.</p>
+          </div>
+          <p class="reassurance">You are not to blame for what happened, and it’s okay if you don’t remember every detail.</p>
+          <form class="contact-form" action="mailto:help@wehackback.org" method="POST" enctype="text/plain">
+            <fieldset class="form-step" data-step="1">
+              <legend class="sr-only">How can we reach you</legend>
+              <div class="field-group">
+                <label for="name">Name</label>
+                <p class="helper-text">You can use a pseudonym.</p>
+                <input id="name" type="text" name="name" placeholder="Name or pseudonym" required>
+              </div>
+
+              <div class="field-group">
+                <label for="email">Your email</label>
+                <input id="email" type="email" name="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="field-group">
+                <label for="phone">Phone (optional)</label>
+                <p class="helper-text">Include country code if outside US/Canada.</p>
+                <input id="phone" type="tel" name="phone" placeholder="Phone number">
+              </div>
+            </fieldset>
+
+            <fieldset class="form-step" data-step="2">
+              <legend class="sr-only">What happened</legend>
+              <div class="field-group">
+                <label for="incident">Incident type</label>
+                <select id="incident" name="incident" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option>Sextortion / blackmail</option>
+                  <option>Account takeover</option>
+                  <option>Harassment / doxing</option>
+                  <option>Fraud or scam</option>
+                  <option>Malware / ransomware</option>
+                  <option>Data breach</option>
+                  <option>I’m not sure</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="message">What happened?</label>
+                <textarea id="message" name="message" placeholder="Example: Received threats demanding money after sending photos; Instagram account locked; got links from +44 number." rows="5" required></textarea>
+                <p class="helper-text">Plain language is enough—you don’t need perfect technical terms.</p>
+              </div>
+            </fieldset>
+
+            <div class="form-footer">
+              <div class="consent">
+                <input id="consent" type="checkbox" name="consent" required>
+                <label for="consent">I understand We Hack Back will use this information only to respond to my request.</label>
+              </div>
+              <div class="action-buttons">
+                <button type="button" class="secondary-cta form-back" aria-hidden="true">Back</button>
+                <button type="button" class="cta form-next">Next</button>
+                <button type="submit" class="cta form-submit">Send message</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <p class="reassurance">You are not to blame for what happened, and it’s okay if you don’t remember every detail.</p>
-        <form class="contact-form" action="mailto:help@wehackback.org" method="POST" enctype="text/plain">
-          <fieldset class="form-step" data-step="1">
-            <legend class="sr-only">How can we reach you</legend>
-            <label for="name">Name (you can use a pseudonym)</label>
-            <input id="name" type="text" name="name" placeholder="Name or pseudonym" required>
-
-            <label for="email">Your email</label>
-            <input id="email" type="email" name="email" placeholder="you@example.com" required>
-
-            <label for="phone">Phone (optional)</label>
-            <input id="phone" type="tel" name="phone" placeholder="Include country code if outside US/Canada">
-          </fieldset>
-
-          <fieldset class="form-step" data-step="2">
-            <legend class="sr-only">What happened</legend>
-            <label for="incident">Incident type</label>
-            <select id="incident" name="incident" required>
-              <option value="" disabled selected>Select an option</option>
-              <option>Sextortion / blackmail</option>
-              <option>Account takeover</option>
-              <option>Harassment / doxing</option>
-              <option>Fraud or scam</option>
-              <option>Malware / ransomware</option>
-              <option>Data breach</option>
-              <option>I’m not sure</option>
-              <option>Other</option>
-            </select>
-
-            <label for="message">What happened?</label>
-            <textarea id="message" name="message" placeholder="Example: Received threats demanding money after sending photos; Instagram account locked; got links from +44 number." rows="5" required></textarea>
-            <p class="helper-text">Share what you remember. Plain language is enough—you don’t need perfect technical terms.</p>
-          </fieldset>
-
-          <label class="sr-only" for="consent">Data handling</label>
-          <div class="consent">
-            <input id="consent" type="checkbox" name="consent" required>
-            <label for="consent">I understand We Hack Back will use this information only to respond to my request.</label>
-          </div>
-
-          <div class="form-actions">
-            <button type="button" class="secondary-cta form-back" aria-hidden="true">Back</button>
-            <button type="button" class="cta form-next">Next</button>
-            <button type="submit" class="cta form-submit">Send message</button>
-          </div>
-        </form>
-        <p class="contact-note">Prefer to use your own email? Send details to <a href="mailto:help@wehackback.org">help@wehackback.org</a>.</p>
       </div>
     </div>
   </section>
