@@ -461,10 +461,6 @@ img {
   background: #fff;
 }
 
-.info:nth-of-type(even) {
-  background: #f2f2f7;
-}
-
 .info.muted {
   background: #eef3fb;
 }
