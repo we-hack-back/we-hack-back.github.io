@@ -461,12 +461,14 @@ img {
   background: #fff;
 }
 
-.info:nth-of-type(even) {
-  background: #f2f2f7;
-}
-
 .info.muted {
   background: #eef3fb;
+}
+
+#trust,
+#victims,
+#contact {
+  background: #fff;
 }
 
 .trust-header {
@@ -668,7 +670,6 @@ img {
 }
 
 #services,
-#victims,
 #about {
   background: #f2f2f7;
 }
