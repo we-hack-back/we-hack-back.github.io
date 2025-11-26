@@ -461,12 +461,14 @@ img {
   background: #fff;
 }
 
-.info:nth-of-type(even) {
-  background: #f2f2f7;
-}
-
 .info.muted {
   background: #eef3fb;
+}
+
+#trust,
+#victims,
+#contact {
+  background: #fff;
 }
 
 .trust-header {
@@ -553,92 +555,104 @@ img {
   text-align: center;
 }
 
-.contact-assurances {
-  display: grid;
-  gap: 0.6em;
-  margin: 1em auto 0.5em;
-  text-align: left;
+.contact-card {
+  max-width: 520px;
+  margin: 1.25rem auto 0;
   background: #fff;
-  padding: 1em 1.1em;
-  border-radius: 10px;
-  border: 1px solid #dfe3eb;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 37, 68, 0.14);
+  text-align: left;
+  display: grid;
+  gap: 1rem;
 }
 
-.contact-assurances i {
-  color: var(--blue);
-  margin-right: 0.6em;
-}
-
-.contact-assurances p {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6em;
+.contact-intro {
   margin: 0;
+  font-weight: 600;
+  color: #16213c;
+}
+
+.contact-alt {
+  margin: -0.35rem 0 0;
+  color: #38435a;
+  font-size: 0.95em;
+}
+
+.contact-trust {
+  background: #f7f9fc;
+  border: 1px solid #e1e7f1;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  display: grid;
+  gap: 0.35rem;
+  color: #1f2a3d;
+  font-weight: 600;
+}
+
+.contact-trust p {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.contact-trust i {
+  color: var(--blue);
+  margin-top: 0.05rem;
 }
 
 .reassurance {
+  margin: -0.25rem 0 0.25rem;
   font-weight: 600;
-  margin: 1em 0;
+  color: #16213c;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  display: grid;
+  gap: 0.85rem;
 }
 
 .contact-form fieldset {
   border: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.field-group {
+  display: grid;
+  gap: 0.35rem;
 }
 
 .contact-form label {
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
+  color: #1f2a3d;
 }
 
 .contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75em;
-  border-radius: 8px;
-  border: 1px solid #dfe3eb;
-}
-
-.contact-form button {
-  align-self: flex-end;
-}
-
+.contact-form textarea,
 .contact-form select {
   width: 100%;
-  padding: 0.75em;
+  padding: 0.7em 0.75em;
   border-radius: 8px;
   border: 1px solid #dfe3eb;
   background: #fff;
+  font-size: 1em;
 }
 
 .helper-text {
-  margin: 0.35em 0 0;
+  margin: 0;
   color: #4a4a4a;
   text-align: left;
-  font-size: 0.95em;
-}
-
-.form-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.65em;
-  flex-wrap: wrap;
-}
-
-.form-back,
-.form-next {
-  display: none;
+  font-size: 0.93em;
 }
 
 .contact-form.is-enhanced .form-step {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 .contact-form.is-enhanced .form-back,
@@ -646,8 +660,24 @@ img {
   display: inline-flex;
 }
 
+.form-back,
+.form-next {
+  display: none;
+}
+
 .form-back[aria-hidden="true"] {
   display: none;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #e8edf5;
+  padding-top: 0.75rem;
+  margin-top: 0.25rem;
 }
 
 .consent {
@@ -657,10 +687,16 @@ img {
   align-items: start;
   text-align: left;
   font-size: 0.95em;
+  margin: 0;
 }
 
-.contact-note {
-  margin-top: 1em;
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.65em;
+  width: 100%;
+  max-width: 240px;
 }
 
 #about {
@@ -668,7 +704,6 @@ img {
 }
 
 #services,
-#victims,
 #about {
   background: #f2f2f7;
 }
@@ -745,6 +780,36 @@ footer a {
   }
 
   .hero-actions {
+    justify-content: center;
+  }
+
+  .contact-card {
+    margin-top: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-card {
+    max-width: 100%;
+  }
+
+  .form-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .action-buttons {
+    width: 100%;
+    max-width: none;
+  }
+
+  .action-buttons .cta,
+  .action-buttons .secondary-cta,
+  .action-buttons .form-submit,
+  .action-buttons .form-next,
+  .action-buttons .form-back {
+    width: 100%;
     justify-content: center;
   }
 }
