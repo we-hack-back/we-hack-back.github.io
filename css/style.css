@@ -466,9 +466,13 @@ img {
 }
 
 #trust,
-#victims,
-#contact {
+#victims {
   background: #fff;
+}
+
+#contact,
+#services {
+  background: #f2f2f7;
 }
 
 .trust-header {
@@ -699,14 +703,6 @@ img {
   max-width: 240px;
 }
 
-#about {
-  display: block;
-}
-
-#services,
-#about {
-  background: #f2f2f7;
-}
 
 .team-grid {
   text-align: center;
