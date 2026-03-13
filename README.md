@@ -1,10 +1,32 @@
-# Welcome! We're here to help.
-We Hack Back, an organization dedicated to helping individuals respond to and overcome cybersecurity crime for the betterment of society.
-If you are a victim of cybersecurity crime and need immediate assistance, please reach out to us on Signal here:
+# We Hack Back
 
-# How does it work?
-Once we receive your message, our team of cybersecurity experts will reach out to you as soon as possible.
-Our goal is to respond to every message we receive within 24 hours. (please be patient, we are also working full time jobs and unfortuntely can't check our phones 24/7)
+Free, confidential cybercrime help for people who need support after online harm.
 
-# Do I have to pay for help?
-We will never charge you a fee, or expect any form of payment for the support we provide. We simply want to help you out of an unfortunate situation and get you back on your feet.
+## What we do
+
+We help victims of cybercrime stop harm, secure accounts, preserve evidence, and navigate recovery. The site currently highlights support for:
+
+- incident response
+- forensics
+- prevention planning
+- victim advocacy
+
+## How we work
+
+We use a trauma-informed, victim-centered approach. We do not ask for payment, passwords, or remote control of your devices. Our current website messaging says:
+
+- response goal: within 4 hours from a human responder
+- share only what feels safe
+- you stay in control of decisions
+
+## Who we help
+
+The website currently speaks to:
+
+- small businesses
+- individuals and families
+- nonprofits and community organizations
+
+## Contact
+
+People can request support through the website contact form or by emailing [help@wehackback.com](mailto:help@wehackback.com).
